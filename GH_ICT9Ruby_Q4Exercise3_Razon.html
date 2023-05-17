@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Converter</h1>
+	<input type="text" id="id1" placeholder="CM Value"><br>
+	<button onclick="Feet()">CM - FT</button>
+	<p id="feet"></p>
+
+	<input type="number" id="id2" placeholder="Feet Value"><br>
+	<button onclick="CM()">FT - CM</button>
+	<p id="cm"></p>
+
+	<script>
+		function Feet() {
+			var x = document.getElementById('id1').value;
+			var feet = x * 0.032;
+			document.getElementById('feet').innerHTML = "The answer is " + feet + " feet.";
+		}
+		function CM() {
+			var x = document.getElementById('id2').value;
+			var cm = x * 30.48;
+			document.getElementById('cm').innerHTML = "The answer is " + cm + " CM.";
+		}
+
+	</script>
+</body>
+</html>
